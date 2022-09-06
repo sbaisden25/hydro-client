@@ -1,6 +1,6 @@
-import './product.css';
+import './bottledwaterproduct.css';
 
-function Product({ id, name, price, caloriesPerServing, img, link}) {
+function BottledWaterProduct({ id, name, price, ozPerBottle, numOfBottles, ozPerPack, ozPerDol, ph, img, link, tags}) {
 
 
     function getCalsPerDol () {
@@ -49,4 +49,4 @@ function Product({ id, name, price, caloriesPerServing, img, link}) {
 );
 }
 
-export default Product;
+export default BottledWaterProduct;

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios"
 import './bottledwaterlist.css';
-import Product from '../../product/Product';
+import BottledWaterProduct from '../../product/bottledWaterProduct/BottledWaterProduct';
 
 
-function ProductList() {
+function BottledWaterList() {
 
   const [products, setProducts] = useState([]);
 
@@ -36,10 +36,17 @@ function ProductList() {
             
             {products.map(product => (
 
-                <Product 
+                <BottledWaterProduct 
                 key={product._id}
                 id={product._id}
                 name = {product.name}
+                price = {product.name}
+                ozPerBottle = {product.OzPerBottle}
+                numOfBottles = {product.numOfBottles}
+                ozPerPack = {product.ozPerPack}
+                ozPerDol = {product.ozPerDol}
+                ph = {product}
+
                 img = {product.img}
 
                  />
@@ -54,4 +61,4 @@ function ProductList() {
 
 }
 
-export default ProductList;
+export default BottledWaterList;
