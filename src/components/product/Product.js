@@ -4,7 +4,7 @@ function Product({ id, name, price, caloriesPerServing, img, link}) {
 
 
     function getCalsPerDol () {
-      return (caloriesPerServing * servingsPerProduct / price).toFixed()
+      return (5 * 5 / 10).toFixed()
     }
 
 /* 
